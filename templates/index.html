@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Playlists</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <main>
+        <h1><i class="fas fa-music"></i> Bienvenido al Generador de Playlists</h1>
+
+        <form action="/generar" method="post">
+            <label for="emocion"><strong>Elige tu estado de ánimo:</strong></label>
+            <select name="emocion" id="emocion">
+                <option value="felicidad">Felicidad</option>
+                <option value="fiesta">Fiesta</option>
+                <option value="motivacion">Motivación</option>
+                <option value="intensidad">Intensidad</option>
+                <option value="relajacion">Relajación</option>
+                <option value="tristeza">Tristeza</option>
+                <option value="balance">Balance</option>
+                <option value="concentracion">Concentración</option>
+            </select>
+            <button type="submit"><i class="fas fa-music"></i> Generar Playlist</button>
+        </form>
+    </main>
+
+    <footer class="footer-demo">
+        <p>Versión demo desarrollada por <strong><a href="https://github.com/affec-ds" target="_blank"
+                    style="color: white;">Affectus Jaureguizar</a></strong>. Estamos trabajando en nuevas funciones y
+            mejoras. 🚀</p>
+    </footer>
+</body>
+
+</html>

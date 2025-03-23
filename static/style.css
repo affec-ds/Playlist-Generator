@@ -1,0 +1,177 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+}
+
+/* ===== Títulos ===== */
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+/* ===== Formularios ===== */
+label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+button,
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #00b894;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #019875;
+}
+
+/* ===== Emojis reemplazados por íconos FontAwesome ===== */
+.fa-music,
+.fa-random,
+.fa-arrow-left {
+    margin: 0 5px;
+}
+
+/* ===== Fondos según emoción ===== */
+body.felicidad {
+    background: linear-gradient(to right, #f9d423, #ff4e50);
+}
+
+body.fiesta {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+body.motivacion {
+    background: linear-gradient(to right, #1e9600, #fff200);
+}
+
+body.intensidad {
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+}
+
+body.relajacion {
+    background: linear-gradient(to right, #3a6073, #16222a);
+}
+
+body.tristeza {
+    background: linear-gradient(to right, #485563, #29323c);
+}
+
+body.balance {
+    background: linear-gradient(to right, #00b09b, #96c93d);
+}
+
+body.concentracion {
+    background: linear-gradient(to right, #434343, #000000);
+}
+
+/* ===== Tabla de canciones ===== */
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+th,
+td {
+    padding: 12px 20px;
+    text-align: left;
+    font-size: 1em;
+    color: #f0f0f0;
+}
+
+th {
+    font-weight: bold;
+}
+
+/* ===== Contenedor estilizado para la playlist ===== */
+.playlist-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+/* ===== Botones y enlaces ===== */
+.btn-play {
+    background-color: #1abc9c;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.1em;
+    margin: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-play:hover {
+    background-color: #16a085;
+}
+
+a.cambiar {
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+/* ===== Footer fijo abajo ===== */
+.footer-demo {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ccc;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

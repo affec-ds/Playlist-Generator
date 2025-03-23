@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Playlist Generada</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="{{ emocion.lower() }}">
+    <main>
+        <h1><i class="fas fa-music"></i> Tu Playlist Generada <i class="fas fa-music"></i></h1>
+
+        <div class="playlist-card">
+            <h2>{{ nombre_playlist }}</h2>
+
+            <table>
+                <tr>
+                    <th>Artista</th>
+                    <th>Canción</th>
+                    <th>Álbum</th>
+                </tr>
+                {% for song in playlist %}
+                <tr>
+                    <td>{{ song.Artist }}</td>
+                    <td>{{ song.Track }}</td>
+                    <td>{{ song.Album }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+        <form action="/generar" method="post">
+            <input type="hidden" name="emocion" value="{{ emocion }}">
+            <button type="submit" class="btn-play"><i class="fas fa-random"></i> Generar otra Playlist</button>
+        </form>
+
+        <a href="/" class="cambiar"><i class="fas fa-arrow-left"></i> Cambiar emoción</a>
+    </main>
+
+    <footer class="footer-demo">
+        <p>Versión demo desarrollada por <strong><a href="https://github.com/affec-ds" target="_blank"
+                    style="color: white;">Affectus Jaureguizar</a></strong>. Estamos trabajando en nuevas funciones y
+            mejoras. 🚀</p>
+    </footer>
+</body>
+
+</html>
