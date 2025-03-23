@@ -14,7 +14,7 @@ Desarrollar un sistema de recomendación de playlists personalizadas basado en l
 
 Puedes ejecutar la app localmente y probarla accediendo a:
 
-http://127.0.0.1:5000
+[Playlist Generator](https://playlistgenerator-vwec.onrender.com/)
 
 
 ---
