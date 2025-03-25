@@ -62,7 +62,7 @@ Construir un sistema de recomendación musical que entregue playlists personaliz
 
 ---
 
-## 🛠️ Instalación local
+## ▶️ Cómo ejecutar este proyecto
 
 1. **Clona este repositorio:**
    ```bash
