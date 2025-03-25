@@ -1,55 +1,64 @@
 # 🎧 Playlist Generator
 
-Una aplicación web interactiva que recomienda canciones basadas en el estado emocional del usuario, utilizando clustering de datos musicales. Construida con Python, Flask, y datos reales de más de 20.000 canciones extraídas desde una fuente abierta.
+### Autor: Affectus Jaureguizar
+### Fecha: 20 de Marzo, 2025
+
+---
+
+## 📄Descripción del Proyecto
+
+Aplicación web interactiva que recomienda canciones según el estado emocional del usuario, utilizando clustering de características acústicas. Desarrollada con **Python**, **Flask** y un dataset real de más de 20.000 canciones.
 
 ---
 
 ## 🧠 Objetivo del Proyecto
 
-Desarrollar un sistema de recomendación de playlists personalizadas basado en las características acústicas de las canciones, con el fin de sugerir música alineada al estado emocional del usuario.
+Construir un sistema de recomendación musical que entregue playlists personalizadas, alineadas al estado emocional seleccionado por el usuario, mediante técnicas de análisis exploratorio y aprendizaje no supervisado.
 
 ---
 
-## 🚀 Demo local
+## 🚀 Demo desplegada
 
-Puedes ejecutar la app localmente y probarla accediendo a:
-
-[Playlist Generator](https://playlistgenerator-vwec.onrender.com/)
-
+👉 [Probar la aplicación en Render](https://playlistgenerator-vwec.onrender.com/)
 
 ---
 
-## 🧪 Tecnologías utilizadas
+## 🛠️ Tecnologías Utilizadas
 
 - Python 3
 - Jupyter Notebook
 - Flask
-- Pandas / Scikit-learn / Matplotlib / Seaborn
-- HTML + Bootstrap (visual simple)
+- Pandas · Scikit-learn · Matplotlib · Seaborn
+- HTML + Bootstrap (interfaz simple)
 
 ---
 
 ## 🧬 Metodología
 
-1. **Dataset:** Más de 20.000 canciones con variables como valence, energy, danceability y tempo. Obtenido desde [Google Dataset Search](https://datasetsearch.research.google.com/), redirigido a Kaggle.
+1. **Dataset**  
+   Más de 20.000 canciones con variables como `valence`, `energy`, `danceability` y `tempo`. Obtenido a través de [Google Dataset Search](https://datasetsearch.research.google.com/), con redirección a Kaggle.
 
-2. **EDA:** Análisis exploratorio para entender la distribución emocional de las canciones.
+2. **EDA**  
+   Análisis exploratorio para comprender la distribución emocional de las canciones y su agrupamiento natural.
 
-3. **Clustering:** Uso de K-Means para agrupar canciones según características acústicas en distintos "moods".
+3. **Clustering**  
+   Uso de K-Means para segmentar las canciones en clusters representativos de distintos estados emocionales ("moods").
 
-4. **Recomendación:** El usuario elige una emoción y la app recomienda canciones del cluster más alineado a ella.
+4. **Recomendación**  
+   El usuario selecciona una emoción y la app devuelve canciones pertenecientes al cluster más alineado a ese estado emocional.
 
-5. **Migración a web:** El código fue trasladado a Flask y desplegado como una app web funcional.
+5. **Despliegue Web**  
+   El flujo fue migrado a Flask para transformar el proyecto en una aplicación web funcional y accesible.
 
 ---
 
-## 🎯 Características principales
+## 🎯 Funcionalidades principales
 
-- Selección de emoción por parte del usuario
-- Recomendación de canciones alineadas al estado emocional
-- Botón para regenerar una nueva playlist con la misma emoción
-- Botón para cambiar de emoción
-- Flujo intuitivo y 100% funcional localmente
+- Selección de emoción desde la interfaz.
+- Recomendación automática de canciones según estado emocional.
+- Regeneración de playlist con la misma emoción.
+- Opción de cambiar de emoción y generar una nueva playlist.
+- Flujo de usuario limpio, visual simple y funcionamiento estable.
 
 ---
 
@@ -57,7 +66,14 @@ Puedes ejecutar la app localmente y probarla accediendo a:
 
 1. **Clona este repositorio:**
    ```bash
-   git clone git clone https://github.com/affec-ds/Playlist-Generator.git
+   git clone https://github.com/affec-ds/Playlist-Generator.git
+
+2. **Navega al directorio del proyecto:**
+   cd Playlist-Generator
+3. **Instala las dependencias:**
+   pip install -r requirements.txt
+4. **Ejecuta la aplicación localmente:**   
+   flask run
 
 ---
 
