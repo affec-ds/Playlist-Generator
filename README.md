@@ -69,10 +69,15 @@ Construir un sistema de recomendación musical que entregue playlists personaliz
    git clone https://github.com/affec-ds/Playlist-Generator.git
 
 2. **Navega al directorio del proyecto:**
+   ```bash
    cd Playlist-Generator
-3. **Instala las dependencias:**
+   
+4. **Instala las dependencias:**
+   ```bash
    pip install -r requirements.txt
-4. **Ejecuta la aplicación localmente:**   
+   
+6. **Ejecuta la aplicación localmente:**   
+   ```bash
    flask run
 
 ---
