@@ -58,3 +58,11 @@ Puedes ejecutar la app localmente y probarla accediendo a:
 1. **Clona este repositorio:**
    ```bash
    git clone git clone https://github.com/affec-ds/Playlist-Generator.git
+
+---
+
+## 📩 Contacto
+
+💼[Conectemos en LinkedIn](https://cl.linkedin.com/in/affectusjaureguizar)
+
+💼[GitHub](https://github.com/affec-ds)
