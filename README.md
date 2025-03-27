@@ -87,5 +87,3 @@ Construir un sistema de recomendación musical que entregue playlists personaliz
 💼[Conectemos en LinkedIn](https://cl.linkedin.com/in/affectusjaureguizar)
 
 💼[GitHub](https://github.com/affec-ds)
-## 📩 Contact
-Visit my full GitHub profile: github.com/affec-ds
